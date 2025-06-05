@@ -1,1 +1,13 @@
 @import url('./main-layout.css');
+
+:host {
+    --lumo-primary-color: #ff6b6b;
+}
+
+.main-header {
+    color: var(--lumo-primary-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border: 2px solid var(--lumo-primary-color);
+    border-radius: 8px;
+}
