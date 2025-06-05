@@ -17,3 +17,56 @@
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+:host {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #34495e;
+    --background-color: #ffffff;
+}
+
+[theme~="dark"] {
+    --primary-color: #1a1a1a;
+    --secondary-color: #4ecdc4;
+    --text-color: #ffffff;
+    --background-color: #2d2d2d;
+}
+
+.home-view {
+    position: relative;
+    height: 100vh;
+}
+
+.particle-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    background: rgba(var(--background-color), 0.9);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.main-header {
+    font-size: 3.5rem;
+    background: linear-gradient(45deg, var(--secondary-color), #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}

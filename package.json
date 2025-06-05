@@ -20,7 +20,8 @@
     "proj4": "2.15.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-router": "7.5.2"
+    "react-router": "7.5.2",
+    "three": "0.152.2"
   },
   "devDependencies": {
     "@babel/preset-react": "7.26.3",
@@ -62,7 +63,8 @@
       "proj4": "2.15.0",
       "react": "18.3.1",
       "react-dom": "18.3.1",
-      "react-router": "7.5.2"
+      "react-router": "7.5.2",
+      "three": "0.152.2"
     },
     "devDependencies": {
       "@babel/preset-react": "7.26.3",
@@ -85,7 +87,7 @@
       "workbox-core": "7.3.0",
       "workbox-precaching": "7.3.0"
     },
-    "hash": "c18408e57a0875a842d7f93da064e1b59d0f12787cf31c11320e67bdbc80cdb5"
+    "hash": "13c1ca9956c3bf24217e46ca74cae6efedae1578f927c2851640819b3d1ef1cb"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -105,6 +107,7 @@
     "proj4": "$proj4",
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
-    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles"
+    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
+    "three": "$three"
   }
 }
