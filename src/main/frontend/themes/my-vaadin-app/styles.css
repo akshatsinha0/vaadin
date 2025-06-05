@@ -1,13 +1,19 @@
-@import url('./main-layout.css');
-
 :host {
-    --lumo-primary-color: #ff6b6b;
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #34495e;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--secondary-color);
+  margin: 2rem 0;
 }
 
 .main-header {
-    color: var(--lumo-primary-color);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    padding: 1rem;
-    border: 2px solid var(--lumo-primary-color);
-    border-radius: 8px;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
