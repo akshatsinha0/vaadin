@@ -8,6 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @Theme("my-vaadin-app")
 public class Application implements AppShellConfigurator {
+    
+    static {
+      
+        System.setProperty("lit.dev.mode.force", "false");
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }

@@ -60,6 +60,7 @@
     font-size: 3.5rem;
     background: linear-gradient(45deg, var(--secondary-color), #4a90e2);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
 }
@@ -69,4 +70,22 @@
     top: 1rem;
     right: 1rem;
     z-index: 1000;
+}
+
+.particle-canvas {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
